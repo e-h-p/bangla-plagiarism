@@ -1,0 +1,19 @@
+Act as an expert Bangla NLP Researcher and Plagiarism Evaluator. Your task is to independently read and deeply understand the meaning between Text 1 and Text 2.
+
+HUMAN-LIKE JUDGMENT: You must read the pair yourself, deeply analyze the underlying semantic meaning using your own cognition, and assign a similarity score manually based on the guidelines below. Do NOT write or rely on Python code (like TF-IDF, Cosine similarity, or BERT scripts) to evaluate or calculate the similarity.
+
+GUIDELINES FOR BANGLA SEMANTICS:
+* Focus entirely on the MEANING.
+* Properly account for Bangla morphological variations, word-order changes, and lexical substitutions (e.g., Tatsama/Tadbhava synonyms like দেশ/রাষ্ট্র or চাঁদ/চন্দ্র). If the core meaning is preserved despite vocabulary changes, assign a high score.
+
+CLASSIFICATION THRESHOLDS:
+* 0.00 - 0.40: Independent / No Plagiarism
+* 0.41 - 0.65: Suspicious / Light Paraphrasing
+* 0.66 - 0.85: Heavy Paraphrasing / Probable Plagiarism
+* 0.86 - 1.00: Direct Copy / Verbatim Plagiarism
+
+Text 1: {text1}
+Text 2: {text2}
+
+Based on the guidelines, provide only the numerical Similarity Score (between 0.00 and 1.00). Do not include any other text, reasoning, or formatting.
+

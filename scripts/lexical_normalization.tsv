@@ -1,0 +1,163 @@
+category	canonical	variant	confidence	note
+orthographic	বাড়ি	বাড়ি	1.00	Bengali ra/ya spelling variant
+orthographic	বড়	বড়	1.00	Bengali ra/ya spelling variant
+orthographic	হয়েছে	হয়েছে	1.00	Precomposed/decomposed ya variant
+orthographic	হয়ে	হয়ে	1.00	Precomposed/decomposed ya variant
+orthographic	দিয়ে	দিয়ে	1.00	Precomposed/decomposed ya variant
+orthographic	নিয়ে	নিয়ে	1.00	Precomposed/decomposed ya variant
+orthographic	পাওয়া	পাওয়া	1.00	Precomposed/decomposed ya variant
+orthographic	দেওয়া	দেওয়া	1.00	Precomposed/decomposed ya variant
+orthographic	যায়	যায়	1.00	Precomposed/decomposed ya variant
+orthographic	দেয়	দেয়	1.00	Precomposed/decomposed ya variant
+orthographic	সবচেয়ে	সবচেয়ে	1.00	Precomposed/decomposed ya variant
+orthographic	অধ্যয়ন	অধ্যয়ন	1.00	Precomposed/decomposed ya variant
+orthographic	প্রয়োগ	প্রয়োগ	1.00	Precomposed/decomposed ya variant
+orthographic	সহায়তা	সহায়তা	1.00	Precomposed/decomposed ya variant
+orthographic	উন্নয়ন	উন্নয়ন	1.00	Precomposed/decomposed ya variant
+orthographic	প্রক্রিয়া	প্রক্রিয়া	1.00	Precomposed/decomposed ya variant
+orthographic	মূল্যায়ন	মূল্যায়ন	1.00	Precomposed/decomposed ya variant
+orthographic	রচয়িতা	রচয়িতা	1.00	Precomposed/decomposed ya variant
+orthographic	প্রয়াণ	প্রয়াণ	1.00	Precomposed/decomposed ya variant
+orthographic	অভিপ্রায়	অভিপ্রায়	1.00	Precomposed/decomposed ya variant
+orthographic	উপায়	উপায়	1.00	Precomposed/decomposed ya variant
+orthographic	আবহাওয়া	আবহাওয়া	1.00	Precomposed/decomposed ya variant
+orthographic	সায়েন্স	সাইন্স	0.95	Common loanword spelling variant
+orthographic	অ্যালগরিদম	এলগরিদম	0.95	Common loanword spelling variant
+formal_colloquial	করেছে	করিয়াছে	0.95	Formal/literary verb form
+formal_colloquial	করেছে	করিয়াছে	0.95	Formal/literary verb form
+formal_colloquial	করে	করিয়া	0.95	Formal/literary converb
+formal_colloquial	করে	করিয়া	0.95	Formal/literary converb
+formal_colloquial	হয়েছে	হইয়াছে	0.95	Formal/literary verb form
+formal_colloquial	হয়েছে	হইয়াছে	0.95	Formal/literary verb form
+formal_colloquial	হয়ে	হইয়া	0.95	Formal/literary converb
+formal_colloquial	হয়ে	হইয়া	0.95	Formal/literary converb
+formal_colloquial	হল	হইল	0.95	Formal/literary verb form
+formal_colloquial	ছিল	ছিলো	0.95	Common spelling/register variant
+formal_colloquial	থেকে	হইতে	0.95	Formal/literary postposition
+formal_colloquial	তার	তাহার	0.95	Formal/literary pronoun
+formal_colloquial	তারা	তাহারা	0.95	Formal/literary pronoun
+formal_colloquial	এটি	ইহা	0.95	Formal/literary pronoun
+formal_colloquial	ওটি	উহা	0.95	Formal/literary pronoun
+formal_colloquial	সাথে	সহিত	0.90	Formal/literary postposition
+formal_colloquial	জন্য	নিমিত্তে	0.90	Formal/literary postposition
+formal_colloquial	দিয়ে	দ্বারা	0.90	Agent/instrument marker
+formal_colloquial	দিয়ে	কর্তৃক	0.90	Agent marker
+tatsama_tadbhava	দেশ	রাষ্ট্র	0.88	High-confidence context-dependent synonym; validate for final experiments
+tatsama_tadbhava	দেশ	ভূখণ্ড	0.86	High-confidence context-dependent synonym; validate for final experiments
+tatsama_tadbhava	মানুষ	ব্যক্তি	0.88	High-confidence context-dependent synonym
+tatsama_tadbhava	মানুষ	লোক	0.86	High-confidence context-dependent synonym
+tatsama_tadbhava	মানুষ	মানব	0.88	High-confidence context-dependent synonym
+tatsama_tadbhava	ভালো	উত্তম	0.88	High-confidence context-dependent synonym
+tatsama_tadbhava	ভালো	সৎ	0.86	High-confidence context-dependent synonym
+tatsama_tadbhava	ভালো	চমৎকার	0.86	High-confidence context-dependent synonym
+tatsama_tadbhava	খারাপ	মন্দ	0.88	High-confidence context-dependent synonym
+tatsama_tadbhava	খারাপ	ক্ষতিকর	0.84	Below default if strict threshold is used
+tatsama_tadbhava	চাঁদ	চন্দ্র	0.90	Tatsama-tadbhava pair
+tatsama_tadbhava	চাঁদ	চন্দ্রমা	0.90	Tatsama-tadbhava pair
+tatsama_tadbhava	সূর্য	রবি	0.88	Tatsama-tadbhava pair
+tatsama_tadbhava	সূর্য	ভানু	0.86	Tatsama-tadbhava pair
+tatsama_tadbhava	পানি	জল	0.90	Common formal-colloquial lexical pair
+tatsama_tadbhava	পানি	বারি	0.86	Tatsama synonym; slightly literary
+tatsama_tadbhava	পানি	নীর	0.86	Tatsama synonym; slightly literary
+tatsama_tadbhava	আগুন	অগ্নি	0.90	Tatsama-tadbhava pair
+tatsama_tadbhava	আগুন	অনল	0.86	Tatsama synonym; literary
+tatsama_tadbhava	বাড়ি	গৃহ	0.90	Common formal-colloquial lexical pair
+tatsama_tadbhava	বাড়ি	বাসভবন	0.86	Context-dependent synonym
+tatsama_tadbhava	বাড়ি	আবাস	0.86	Context-dependent synonym
+tatsama_tadbhava	শিক্ষা	বিদ্যা	0.88	Tatsama-tadbhava pair
+tatsama_tadbhava	শিক্ষা	পাঠ	0.84	Below default if strict threshold is used
+tatsama_tadbhava	শিক্ষা	অধ্যয়ন	0.86	Context-dependent synonym
+tatsama_tadbhava	ছাত্র	শিক্ষার্থী	0.90	High-confidence role synonym
+tatsama_tadbhava	ছাত্র	ছাত্রী	0.86	Gendered variant; may be risky if gender is essential
+tatsama_tadbhava	ছাত্র	পড়ুয়া	0.86	Context-dependent synonym
+tatsama_tadbhava	শিক্ষক	শিক্ষিকা	0.88	Gendered variant; may be risky if gender is essential
+tatsama_tadbhava	শিক্ষক	অধ্যাপক	0.86	Context-dependent profession synonym
+tatsama_tadbhava	শিক্ষক	প্রভাষক	0.84	Below default if strict threshold is used
+tatsama_tadbhava	প্রযুক্তি	টেকনোলজি	0.90	Common loanword equivalence
+tatsama_tadbhava	প্রযুক্তি	যন্ত্রবিদ্যা	0.86	Context-dependent synonym
+tatsama_tadbhava	প্রযুক্তি	কারিগরি	0.84	Below default if strict threshold is used
+tatsama_tadbhava	বিজ্ঞান	সায়েন্স	0.90	Common loanword equivalence
+tatsama_tadbhava	জলবায়ু	ক্লাইমেট	0.90	Common loanword equivalence
+tatsama_tadbhava	জলবায়ু	আবহাওয়া	0.84	Weather/climate are not always equivalent
+tatsama_tadbhava	গরম	উষ্ণ	0.88	Common lexical pair
+tatsama_tadbhava	গরম	তপ্ত	0.86	Common lexical pair
+tatsama_tadbhava	ঠান্ডা	শীতল	0.88	Common lexical pair
+tatsama_tadbhava	ঠান্ডা	হিম	0.86	Common lexical pair
+tatsama_tadbhava	আর্দ্র	স্যাঁতসেঁতে	0.88	Common lexical pair
+tatsama_tadbhava	আর্দ্র	সিক্ত	0.86	Common lexical pair
+tatsama_tadbhava	বৃষ্টি	বৃষ্টিপাত	0.90	Common morphological/lexical pair
+tatsama_tadbhava	বৃষ্টি	বর্ষণ	0.88	Common lexical pair
+tatsama_tadbhava	নদী	নদ	0.88	Common lexical pair
+tatsama_tadbhava	নদী	তটিনী	0.84	Literary synonym; below default strict threshold
+tatsama_tadbhava	সমুদ্র	সাগর	0.90	Common lexical pair
+tatsama_tadbhava	সমুদ্র	মহাসাগর	0.86	Context-dependent synonym
+tatsama_tadbhava	ভূমি	জমি	0.88	Common lexical pair
+tatsama_tadbhava	ভূমি	মাটি	0.84	Context-dependent; below default strict threshold
+tatsama_tadbhava	পৃথিবী	বিশ্ব	0.86	Context-dependent synonym
+tatsama_tadbhava	ইতিহাস	অতীত	0.84	Context-dependent; below default strict threshold
+tatsama_tadbhava	সমাজ	জনসমাজ	0.88	Common lexical pair
+tatsama_tadbhava	সমাজ	সম্প্রদায়	0.84	Context-dependent; below default strict threshold
+tatsama_tadbhava	সংস্কৃতি	কৃষ্টি	0.88	Common lexical pair
+tatsama_tadbhava	সংস্কৃতি	ঐতিহ্য	0.84	Context-dependent; below default strict threshold
+tatsama_tadbhava	ভাষা	ল্যাঙ্গুয়েজ	0.90	Common loanword equivalence
+tatsama_tadbhava	সাহিত্য	কাব্য	0.84	Context-dependent; below default strict threshold
+tatsama_tadbhava	লেখক	সাহিত্যিক	0.86	Context-dependent role synonym
+tatsama_tadbhava	লেখক	রচয়িতা	0.88	Common role synonym
+tatsama_tadbhava	বই	গ্রন্থ	0.90	Common lexical pair
+tatsama_tadbhava	বই	পুস্তক	0.90	Common lexical pair
+tatsama_tadbhava	জীবন	প্রাণ	0.84	Context-dependent; below default strict threshold
+tatsama_tadbhava	মৃত্যু	প্রয়াণ	0.88	Common formal synonym
+tatsama_tadbhava	মৃত্যু	মরণ	0.88	Common synonym
+tatsama_tadbhava	জন্ম	জন্মগ্রহণ	0.90	Common morphological/lexical pair
+tatsama_tadbhava	জন্ম	আবির্ভাব	0.84	Context-dependent; below default strict threshold
+tatsama_tadbhava	কাজ	কর্ম	0.88	Common lexical pair
+tatsama_tadbhava	কাজ	কার্য	0.88	Common lexical pair
+tatsama_tadbhava	সাহায্য	সহায়তা	0.90	Common lexical pair
+tatsama_tadbhava	সাহায্য	সহযোগিতা	0.86	Context-dependent synonym
+tatsama_tadbhava	সমস্যা	জটিলতা	0.88	Common lexical pair
+tatsama_tadbhava	সমস্যা	বাধা	0.86	Context-dependent synonym
+tatsama_tadbhava	কারণ	হেতু	0.90	Common lexical pair
+tatsama_tadbhava	কারণ	নিমিত্ত	0.88	Common lexical pair
+tatsama_tadbhava	ফলাফল	পরিণাম	0.88	Common lexical pair
+tatsama_tadbhava	ফলাফল	ফল	0.88	Common lexical pair
+tatsama_tadbhava	উন্নতি	অগ্রগতি	0.88	Common lexical pair
+tatsama_tadbhava	উন্নতি	উন্নয়ন	0.86	Context-dependent synonym
+tatsama_tadbhava	পরিবর্তন	রূপান্তর	0.88	Common lexical pair
+tatsama_tadbhava	পরিবর্তন	বদল	0.88	Common lexical pair
+tatsama_tadbhava	ব্যবহার	প্রয়োগ	0.88	Common lexical pair
+tatsama_tadbhava	তৈরি	নির্মাণ	0.86	Context-dependent synonym
+tatsama_tadbhava	তৈরি	সৃষ্টি	0.84	Context-dependent; below default strict threshold
+tatsama_tadbhava	ধ্বংস	বিনাশ	0.88	Common lexical pair
+tatsama_tadbhava	ধ্বংস	নাশ	0.88	Common lexical pair
+tatsama_tadbhava	ছোট	ক্ষুদ্র	0.88	Common lexical pair
+tatsama_tadbhava	ছোট	লঘু	0.84	Context-dependent; below default strict threshold
+tatsama_tadbhava	দ্রুত	ত্বরিত	0.88	Common lexical pair
+tatsama_tadbhava	দ্রুত	শীঘ্র	0.88	Common lexical pair
+tatsama_tadbhava	ধীরে	মন্থর	0.88	Common lexical pair
+tatsama_tadbhava	ধীরে	আস্তে	0.88	Common lexical pair
+tatsama_tadbhava	শুরু	আরম্ভ	0.90	Common lexical pair
+tatsama_tadbhava	শুরু	সূচনা	0.88	Common lexical pair
+tatsama_tadbhava	শেষ	সমাপ্তি	0.90	Common lexical pair
+tatsama_tadbhava	শেষ	অবসান	0.88	Common lexical pair
+tatsama_tadbhava	গুরুত্বপূর্ণ	তাৎপর্যপূর্ণ	0.88	Common lexical pair
+tatsama_tadbhava	গুরুত্বপূর্ণ	জরুরি	0.86	Context-dependent synonym
+tatsama_tadbhava	প্রধান	মুখ্য	0.88	Common lexical pair
+tatsama_tadbhava	প্রধান	কেন্দ্রীয়	0.86	Context-dependent synonym
+tatsama_tadbhava	উদ্দেশ্য	লক্ষ্য	0.88	Common lexical pair
+tatsama_tadbhava	উদ্দেশ্য	অভিপ্রায়	0.88	Common lexical pair
+tatsama_tadbhava	পদ্ধতি	উপায়	0.88	Common lexical pair
+tatsama_tadbhava	পদ্ধতি	কৌশল	0.86	Context-dependent synonym
+tatsama_tadbhava	পদ্ধতি	প্রক্রিয়া	0.86	Context-dependent synonym
+tatsama_tadbhava	গবেষণা	অনুসন্ধান	0.86	Context-dependent synonym
+tatsama_tadbhava	গবেষণা	সমীক্ষা	0.86	Context-dependent synonym
+tatsama_tadbhava	গবেষণা	রিসার্চ	0.90	Common loanword equivalence
+tatsama_tadbhava	তথ্য	ডেটা	0.90	Common loanword equivalence
+tatsama_tadbhava	তথ্য	উপাত্ত	0.90	Common lexical pair
+plagiarism_domain	প্ল্যাজিয়ারিজম	চৌর্যবৃত্তি	0.90	Domain-specific synonym
+plagiarism_domain	প্ল্যাজিয়ারিজম	সাহিত্যচুরি	0.90	Domain-specific synonym
+plagiarism_domain	প্ল্যাজিয়ারিজম	লেখাচুরি	0.90	Domain-specific synonym
+plagiarism_domain	মিল	সাদৃশ্য	0.88	Domain-specific synonym
+plagiarism_domain	মিল	সামঞ্জস্য	0.84	Context-dependent; below default strict threshold
+plagiarism_domain	শনাক্তকরণ	সনাক্তকরণ	0.95	Common spelling/domain variant
+plagiarism_domain	শনাক্তকরণ	চিহ্নিতকরণ	0.88	Domain-specific synonym
+plagiarism_domain	শনাক্তকরণ	ডিটেকশন	0.90	Common loanword equivalence
