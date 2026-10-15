@@ -1,0 +1,2 @@
+﻿Metric,Threshold,Accuracy,Precision,Recall,F1,TP,FP,TN,FN
+Gemini_3_6_Flash_Score,0.5,0.981,0.963391,1.0,0.981354,500,19,481,0

@@ -1,0 +1,2 @@
+﻿Metric,Threshold,Accuracy,Precision,Recall,F1,TP,FP,TN,FN
+Qwen_3_7_Flash_Score,0.5,0.978,0.957854,1.0,0.978474,500,22,478,0

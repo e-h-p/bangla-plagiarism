@@ -1,0 +1,2 @@
+﻿Metric,Threshold,Accuracy,Precision,Recall,F1,TP,FP,TN,FN
+Claude_Sonnet_5_Score,0.8,0.997,0.997996,0.996,0.996997,498,1,499,2

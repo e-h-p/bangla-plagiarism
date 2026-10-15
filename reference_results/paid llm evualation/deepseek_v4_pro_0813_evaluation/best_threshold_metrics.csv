@@ -1,0 +1,2 @@
+﻿Metric,Threshold,Accuracy,Precision,Recall,F1,TP,FP,TN,FN
+DeepSeek_V4_Pro_0813_Score,0.75,0.994,0.988142,1.0,0.994036,500,6,494,0

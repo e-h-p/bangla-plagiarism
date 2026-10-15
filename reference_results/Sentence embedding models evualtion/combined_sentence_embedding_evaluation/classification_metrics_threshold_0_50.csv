@@ -1,0 +1,5 @@
+﻿Metric,Threshold,Accuracy,Precision,Recall,Specificity,FPR,BalancedAccuracy,F1,TP,FP,TN,FN
+LaBSE_Score,0.5,0.8,0.714286,1.0,0.6,0.4,0.8,0.833333,500,200,300,0
+E5_Base_Score,0.5,0.5,0.5,1.0,0.0,1.0,0.5,0.666667,500,500,0,0
+BGE_M3_Score,0.5,0.743,0.660502,1.0,0.486,0.514,0.743,0.795545,500,257,243,0
+MiniLM_Multilingual_Score,0.5,0.661,0.596407,0.996,0.326,0.674,0.661,0.746067,498,337,163,2

@@ -12,33 +12,24 @@ touches ``BanglaPlagPair-1K_source_links_final.xlsx``.
 from __future__ import annotations
 
 import argparse
+import importlib
 import sys
 import time
 
-import step1_build_base_dataset
-import step2_score_raw_dataset
-import step3_polish_and_score
-import step4_run_banglabert_evaluation
-import step5_preprocessing_component_ablation
-import step6_consolidate_results
-import step7_sentence_embedding_evaluation
-import step8_free_llm_evaluation
-import step9_prompt_engineering_evaluation
-import step10_paid_llm_evaluation
 from pipeline_common import banner
 
 
 STEPS = {
-    1: ("Build canonical base dataset", step1_build_base_dataset.main),
-    2: ("Traditional metrics - RAW dataset", step2_score_raw_dataset.main),
-    3: ("Polish dataset + traditional metrics", step3_polish_and_score.main),
-    4: ("BanglaBERT evaluation (2 models x raw/polished)", step4_run_banglabert_evaluation.main),
-    5: ("Preprocessing component ablation", step5_preprocessing_component_ablation.main),
-    6: ("Consolidate results + integrity audit", step6_consolidate_results.main),
-    7: ("Sentence-embedding model evaluation", step7_sentence_embedding_evaluation.main),
-    8: ("Free Hugging Face LLM evaluation", step8_free_llm_evaluation.main),
-    9: ("Top-3 prompt-engineering evaluation", step9_prompt_engineering_evaluation.main),
-    10: ("Paid LLM evaluation", step10_paid_llm_evaluation.main),
+    1: ("Build canonical base dataset", "step1_build_base_dataset"),
+    2: ("Traditional metrics - RAW dataset", "step2_score_raw_dataset"),
+    3: ("Polish dataset + traditional metrics", "step3_polish_and_score"),
+    4: ("BanglaBERT evaluation (2 models x raw/polished)", "step4_run_banglabert_evaluation"),
+    5: ("Preprocessing component ablation", "step5_preprocessing_component_ablation"),
+    6: ("Consolidate results + integrity audit", "step6_consolidate_results"),
+    7: ("Sentence-embedding model evaluation", "step7_sentence_embedding_evaluation"),
+    8: ("Free Hugging Face LLM evaluation", "step8_free_llm_evaluation"),
+    9: ("Top-3 prompt-engineering evaluation", "step9_prompt_engineering_evaluation"),
+    10: ("Paid LLM evaluation", "step10_paid_llm_evaluation"),
 }
 
 
@@ -64,7 +55,7 @@ def main() -> None:
         # so they fall back to their documented defaults.
         sys.argv = [f"step{number}"]
         try:
-            runner()
+            importlib.import_module(runner).main()
         finally:
             sys.argv = saved_argv
         elapsed = time.time() - started

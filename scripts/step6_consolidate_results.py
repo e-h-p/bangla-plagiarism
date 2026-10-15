@@ -323,8 +323,13 @@ def main() -> None:
 
     import numpy as np
     import sklearn
-    import torch
-    import transformers
+    from importlib.metadata import PackageNotFoundError, version
+
+    def optional_version(name):
+        try:
+            return version(name)
+        except PackageNotFoundError:
+            return "not installed (archived-score evaluation)"
 
     integrity["environment"] = {
         "python": sys.version.split()[0],
@@ -332,8 +337,8 @@ def main() -> None:
         "pandas": pd.__version__,
         "numpy": np.__version__,
         "scikit_learn": sklearn.__version__,
-        "torch": torch.__version__,
-        "transformers": transformers.__version__,
+        "torch": optional_version("torch"),
+        "transformers": optional_version("transformers"),
         "seed": SEED,
         "fixed_threshold": FIXED_THRESHOLD,
         "threshold_sweep": THRESHOLDS,

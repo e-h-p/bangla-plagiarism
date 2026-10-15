@@ -1,0 +1,7 @@
+﻿Profile,Setting,ReportLabel,Metric,Threshold,Accuracy,Precision,Recall,Specificity,FPR,BalancedAccuracy,F1,TP,FP,TN,FN
+stemming,Rule-based stemming,Stemming,Cosine,0.5,0.81,0.905759,0.692,0.928,0.072,0.81,0.78458,346,36,464,154
+stemming,Rule-based stemming,Stemming,Jaccard,0.5,0.755,0.907348,0.568,0.942,0.058,0.755,0.698647,284,29,471,216
+stemming,Rule-based stemming,Stemming,LCS,0.5,0.904,0.85689,0.97,0.838,0.162,0.904,0.909944,485,81,419,15
+stemming,Rule-based stemming,Stemming,Sequence,0.5,0.72,0.923077,0.48,0.96,0.04,0.72,0.631579,240,20,480,260
+stemming,Rule-based stemming,Stemming,EditDist,0.5,0.801,0.844394,0.738,0.864,0.136,0.801,0.78762,369,68,432,131
+stemming,Rule-based stemming,Stemming,WordOverlap,0.5,0.851,0.855984,0.844,0.858,0.142,0.851,0.84995,422,71,429,78

@@ -1,0 +1,7 @@
+﻿Profile,Setting,ReportLabel,Metric,Threshold,Accuracy,Precision,Recall,Specificity,FPR,BalancedAccuracy,F1,TP,FP,TN,FN
+lexical_mapping,Lexical mapping,Lexical map,Cosine,0.2,0.892,0.826667,0.992,0.792,0.208,0.892,0.901818,496,104,396,4
+lexical_mapping,Lexical mapping,Lexical map,EditDist,0.3,0.902,0.837248,0.998,0.806,0.194,0.902,0.910584,499,97,403,1
+lexical_mapping,Lexical mapping,Lexical map,Jaccard,0.2,0.902,0.853873,0.97,0.834,0.166,0.902,0.90824,485,83,417,15
+lexical_mapping,Lexical mapping,Lexical map,LCS,0.45,0.909,0.848382,0.996,0.822,0.178,0.909,0.916283,498,89,411,2
+lexical_mapping,Lexical mapping,Lexical map,Sequence,0.1,0.8,0.733645,0.942,0.658,0.342,0.8,0.824869,471,171,329,29
+lexical_mapping,Lexical mapping,Lexical map,WordOverlap,0.35,0.905,0.855888,0.974,0.836,0.164,0.905,0.911132,487,82,418,13

@@ -1,0 +1,2 @@
+﻿Metric,Threshold,Accuracy,Precision,Recall,Specificity,FPR,BalancedAccuracy,F1,TP,FP,TN,FN
+Qwen2_5_0_5B_Instruct_Score,0.5,0.574,0.540659,0.984,0.164,0.836,0.574,0.697872,492,418,82,8

@@ -3,6 +3,7 @@ from __future__ import annotations
 from dataclasses import dataclass
 from pathlib import Path
 
+import numpy as np
 import pandas as pd
 
 from build_interactive_threshold_workbook import build_workbook
@@ -26,6 +27,7 @@ class ScoreWorkbookConfig:
     id_column: str = "pair_no"
     sheet_name: str = "Sheet1"
     detection_column: str | None = "Detection Category"
+    clip_scores: bool = False
 
 
 def load_base_testcases(base_path: Path) -> pd.DataFrame:
@@ -93,8 +95,8 @@ def threshold_sweep(scores: pd.DataFrame, thresholds: list[float], metrics: list
 
 def best_thresholds(sweep_df: pd.DataFrame) -> pd.DataFrame:
     ordered = sweep_df.sort_values(
-        ["Metric", "F1", "Accuracy", "Recall", "Precision"],
-        ascending=[True, False, False, False, False],
+        ["Metric", "F1", "Accuracy", "Recall", "Precision", "Threshold"],
+        ascending=[True, False, False, False, False, True],
     )
     return ordered.groupby("Metric", sort=False).first().reset_index()
 
@@ -139,14 +141,16 @@ def normalize_model_scores(base: pd.DataFrame, config: ScoreWorkbookConfig) -> t
 
     score_series, used_score_columns = select_score_series(df, config)
     filled_missing = int(score_series.isna().sum())
-    if filled_missing:
-        median_value = float(score_series.dropna().median()) if score_series.notna().any() else FIXED_THRESHOLD
-        score_series = score_series.fillna(median_value)
+    if filled_missing or not np.isfinite(score_series.to_numpy(dtype=float)).all():
+        raise ValueError(f"{config.model_name}: scores must be finite and complete; no imputation is permitted")
+    if not config.clip_scores and not score_series.between(0.0, 1.0).all():
+        raise ValueError(f"{config.model_name}: score outside [0,1]")
+    evaluated_scores = score_series.clip(0.0, 1.0) if config.clip_scores else score_series
 
     score_frame = pd.DataFrame(
         {
             "pair_no": df[config.id_column],
-            config.metric_column: score_series.clip(0.0, 1.0),
+            config.metric_column: evaluated_scores,
         }
     )
 

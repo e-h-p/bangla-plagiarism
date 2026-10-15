@@ -1,0 +1,3 @@
+﻿unique_texts,truncated_at_max_length,token_length_min,token_length_mean,token_length_max,embedding_dim,model,score_column,cosine_min,cosine_mean,cosine_max,cosine_std,l2_norm_max_deviation
+1500,0,22,72.37,171,768,csebuetnlp/banglabert,BanglaBERT_Cosine_BUETCSE,0.887562,0.989588,0.999825,0.011476,3.6e-07
+1500,0,34,107.76,231,768,sagorsarker/bangla-bert-base,BanglaBERT_Cosine_SagorSarkar,0.495706,0.863892,0.998954,0.121221,1.8e-07

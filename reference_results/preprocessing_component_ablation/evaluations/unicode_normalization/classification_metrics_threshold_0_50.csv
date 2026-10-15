@@ -1,0 +1,7 @@
+﻿Profile,Setting,ReportLabel,Metric,Threshold,Accuracy,Precision,Recall,Specificity,FPR,BalancedAccuracy,F1,TP,FP,TN,FN
+unicode_normalization,Unicode normalization,Unicode,Cosine,0.5,0.788,0.9,0.648,0.928,0.072,0.788,0.753488,324,36,464,176
+unicode_normalization,Unicode normalization,Unicode,Jaccard,0.5,0.749,0.908197,0.554,0.944,0.056,0.749,0.688199,277,28,472,223
+unicode_normalization,Unicode normalization,Unicode,LCS,0.5,0.905,0.857143,0.972,0.838,0.162,0.905,0.910965,486,81,419,14
+unicode_normalization,Unicode normalization,Unicode,Sequence,0.5,0.722,0.911111,0.492,0.952,0.048,0.722,0.638961,246,24,476,254
+unicode_normalization,Unicode normalization,Unicode,EditDist,0.5,0.805,0.838137,0.756,0.854,0.146,0.805,0.794953,378,73,427,122
+unicode_normalization,Unicode normalization,Unicode,WordOverlap,0.5,0.834,0.855319,0.804,0.864,0.136,0.834,0.828866,402,68,432,98

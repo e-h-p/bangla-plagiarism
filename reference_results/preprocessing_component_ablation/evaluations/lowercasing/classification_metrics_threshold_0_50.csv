@@ -1,0 +1,7 @@
+﻿Profile,Setting,ReportLabel,Metric,Threshold,Accuracy,Precision,Recall,Specificity,FPR,BalancedAccuracy,F1,TP,FP,TN,FN
+lowercasing,Lowercasing,Lowercase,Cosine,0.5,0.788,0.9,0.648,0.928,0.072,0.788,0.753488,324,36,464,176
+lowercasing,Lowercasing,Lowercase,Jaccard,0.5,0.749,0.908197,0.554,0.944,0.056,0.749,0.688199,277,28,472,223
+lowercasing,Lowercasing,Lowercase,LCS,0.5,0.905,0.857143,0.972,0.838,0.162,0.905,0.910965,486,81,419,14
+lowercasing,Lowercasing,Lowercase,Sequence,0.5,0.721,0.907749,0.492,0.95,0.05,0.721,0.638132,246,25,475,254
+lowercasing,Lowercasing,Lowercase,EditDist,0.5,0.806,0.84,0.756,0.856,0.144,0.806,0.795789,378,72,428,122
+lowercasing,Lowercasing,Lowercase,WordOverlap,0.5,0.834,0.855319,0.804,0.864,0.136,0.834,0.828866,402,68,432,98

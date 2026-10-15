@@ -30,11 +30,9 @@ from pathlib import Path
 
 import numpy as np
 import pandas as pd
-import torch
 from openpyxl import Workbook
 from openpyxl.styles import Font, PatternFill
 from openpyxl.utils import get_column_letter
-from transformers import AutoModel, AutoTokenizer
 
 from pipeline_common import (
     BANGLABERT_DIR,
@@ -77,6 +75,8 @@ ID_COLUMNS = [
 
 def mean_pool(last_hidden_state: torch.Tensor, attention_mask: torch.Tensor) -> torch.Tensor:
     """Mean pooling over token embeddings, respecting the attention mask."""
+    import torch
+
     mask = attention_mask.unsqueeze(-1).expand(last_hidden_state.size()).float()
     summed = torch.sum(last_hidden_state * mask, dim=1)
     counts = torch.clamp(mask.sum(dim=1), min=1e-9)
@@ -93,6 +93,9 @@ def encode_unique_texts(
 ) -> tuple[dict[str, np.ndarray], dict[str, object]]:
     """Encode unique texts into L2-normalized embeddings."""
     print(f"  Loading model: {model_name} ...")
+    import torch
+    from transformers import AutoModel, AutoTokenizer
+
     tokenizer = AutoTokenizer.from_pretrained(model_name)
     model = AutoModel.from_pretrained(model_name)
     model.eval()

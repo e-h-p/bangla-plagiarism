@@ -1,0 +1,2 @@
+﻿Metric,Threshold,Accuracy,Precision,Recall,Specificity,FPR,BalancedAccuracy,F1,TP,FP,TN,FN
+BanglaLLama_3_8B_Score,0.5,0.968,0.941509,0.998,0.938,0.062,0.968,0.968932,499,31,469,1

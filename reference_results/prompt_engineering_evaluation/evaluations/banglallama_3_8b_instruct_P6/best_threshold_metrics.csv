@@ -1,0 +1,2 @@
+﻿Metric,Threshold,Accuracy,Precision,Recall,Specificity,FPR,BalancedAccuracy,F1,TP,FP,TN,FN
+P6,0.75,0.972,0.94697,1.0,0.944,0.056,0.972,0.972763,500,28,472,0

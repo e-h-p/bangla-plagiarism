@@ -1,0 +1,2 @@
+﻿Metric,Threshold,Accuracy,Precision,Recall,F1,TP,FP,TN,FN
+DeepSeek_V4_Flash_Score,0.5,0.998,0.996016,1.0,0.998004,500,2,498,0

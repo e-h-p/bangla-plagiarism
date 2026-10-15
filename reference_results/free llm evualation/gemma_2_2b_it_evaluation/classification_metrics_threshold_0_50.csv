@@ -1,0 +1,2 @@
+﻿Metric,Threshold,Accuracy,Precision,Recall,Specificity,FPR,BalancedAccuracy,F1,TP,FP,TN,FN
+Gemma_2_2B_IT_Score,0.5,0.506,0.503018,1.0,0.012,0.988,0.506,0.669344,500,494,6,0

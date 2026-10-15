@@ -1,0 +1,2 @@
+﻿Metric,Threshold,Accuracy,Precision,Recall,Specificity,FPR,BalancedAccuracy,F1,TP,FP,TN,FN
+Llama_3_2_3B_Instruct_Score,0.75,0.829,0.751914,0.982,0.676,0.324,0.829,0.851691,491,162,338,9

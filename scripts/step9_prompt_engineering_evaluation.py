@@ -99,6 +99,9 @@ def load_model_scores(base: pd.DataFrame, filename: str, prefix: str) -> tuple[p
     text2_ok = bool(df["text2"].astype(str).equals(base["text2"].astype(str)))
     stale_ids = df.loc[df["text2"].astype(str).ne(base["text2"].astype(str)), "pair_id"].tolist()
 
+    if not (text1_ok and text2_ok):
+        raise RuntimeError(f"{filename}: input texts differ from the canonical dataset")
+
     columns = {}
     for key, code, _label in PROMPTS:
         column = f"{prefix}_{key}_Score"
@@ -111,7 +114,9 @@ def load_model_scores(base: pd.DataFrame, filename: str, prefix: str) -> tuple[p
         series = pd.to_numeric(df[column], errors="coerce")
         if series.isna().any():
             raise RuntimeError(f"{filename}: {column} contains non-numeric values")
-        merged[code] = series.clip(0.0, 1.0).values
+        if not series.between(0.0, 1.0).all():
+            raise RuntimeError(f"{filename}: {column} contains out-of-range scores")
+        merged[code] = series.values
 
     provenance = {
         "file": filename,

@@ -1,0 +1,2 @@
+﻿Metric,Threshold,Accuracy,Precision,Recall,Specificity,FPR,BalancedAccuracy,F1,TP,FP,TN,FN
+BGE_M3_Score,0.75,0.948,0.913284,0.99,0.906,0.094,0.948,0.950096,495,47,453,5

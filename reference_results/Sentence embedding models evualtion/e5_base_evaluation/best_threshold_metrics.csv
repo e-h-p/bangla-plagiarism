@@ -1,0 +1,2 @@
+﻿Metric,Threshold,Accuracy,Precision,Recall,Specificity,FPR,BalancedAccuracy,F1,TP,FP,TN,FN
+E5_Base_Score,0.9,0.943,0.899099,0.998,0.888,0.112,0.943,0.945972,499,56,444,1

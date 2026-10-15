@@ -1,0 +1,7 @@
+﻿Profile,Setting,ReportLabel,Metric,Threshold,Accuracy,Precision,Recall,Specificity,FPR,BalancedAccuracy,F1,TP,FP,TN,FN
+punctuation_removal,Punctuation removal,Punctuation,Cosine,0.2,0.892,0.827759,0.99,0.794,0.206,0.892,0.901639,495,103,397,5
+punctuation_removal,Punctuation removal,Punctuation,EditDist,0.35,0.904,0.85689,0.97,0.838,0.162,0.904,0.909944,485,81,419,15
+punctuation_removal,Punctuation removal,Punctuation,Jaccard,0.2,0.9,0.853357,0.966,0.834,0.166,0.9,0.906191,483,83,417,17
+punctuation_removal,Punctuation removal,Punctuation,LCS,0.45,0.909,0.848382,0.996,0.822,0.178,0.909,0.916283,498,89,411,2
+punctuation_removal,Punctuation removal,Punctuation,Sequence,0.1,0.804,0.736025,0.948,0.66,0.34,0.804,0.828671,474,170,330,26
+punctuation_removal,Punctuation removal,Punctuation,WordOverlap,0.35,0.905,0.855888,0.974,0.836,0.164,0.905,0.911132,487,82,418,13

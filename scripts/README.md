@@ -1,74 +1,9 @@
-# BanglaPlagPair-1K experiment suite
+# Analysis entry points
 
-This directory contains the self-contained code used to produce and validate
-the manuscript's evaluation artefacts. It has no runtime dependency on earlier
-experiment folders.
+Use the root `reproduce.py` command documented in `../README.md`. It stages a copy of these scripts, the separately supplied dataset and unchanged archived scores in a new output directory before execution.
 
-## Included methodology components
+Stages 1-3 regenerate dataset aliases, raw scores and polished scores. Stage 5 regenerates all nine preprocessing profiles. `evaluate_archived_banglabert.py` evaluates the archived raw/polished encoder scores. Stage 6 consolidates the traditional/BanglaBERT results. Stages 7-10 evaluate the archived sentence-embedding, P0 open-model, P1-P8 and paid-model scores. `generate_report_figures.py` renders the resulting analysis plots.
 
-| Component | Local file |
-| --- | --- |
-| Bangla preprocessing and six traditional metrics | `bangla_plagiarism_pipeline.py` |
-| Lexical-normalization rules | `lexical_normalization.tsv` |
-| Bangla stopword list | `bangla_stopwords.txt` |
-| Threshold sweeps and classification metrics | `evaluation_common.py` |
-| Shared paths, validation, and configuration | `pipeline_common.py` |
+`step4_run_banglabert_evaluation.py` is the optional fresh-inference alternative, enabled by `reproduce.py --regenerate-banglabert`; it requires the model dependencies. The restored `evaluate_sentence_embedding_models.py`, `evaluate_free_hf_models.py`, and `run_preprocessing_component_ablation.py` are the implementations called by their numbered stage wrappers. `evaluation_common.py` and `build_interactive_threshold_workbook.py` provide shared metric calculations and interactive Excel dashboards.
 
-The local methodology files preserve the implementations used for the reported
-experiments. Keeping them beside the stage scripts makes a future public
-release reproducible without private sibling directories.
-
-## Dataset safety
-
-`BanglaPlagPair-1K.xlsx` is opened read-only. Its SHA-256
-is recorded at step 1 and checked again during consolidation. Derived files are
-written under the relevant result directories; the polished dataset preserves
-the original passages in `text1_raw` and `text2_raw`.
-
-## Pipeline stages
-
-| Step | Script | Main output |
-| --- | --- | --- |
-| 1 | `step1_build_base_dataset.py` | `dataset/banglaplagpair1k_base.*` |
-| 2 | `step2_score_raw_dataset.py` | raw traditional scores and evaluation |
-| 3 | `step3_polish_and_score.py` | polished text, scores, and evaluation |
-| 4 | `step4_run_banglabert_evaluation.py` | raw and polished BanglaBERT results |
-| 5 | `step5_preprocessing_component_ablation.py` | component-wise ablation |
-| 6 | `step6_consolidate_results.py` | consolidated results and validation |
-| 7 | `step7_sentence_embedding_evaluation.py` | sentence-encoder evaluation |
-| 8 | `step8_free_llm_evaluation.py` | open-weight LLM evaluation |
-| 9 | `step9_prompt_engineering_evaluation.py` | prompt-strategy evaluation |
-| 10 | `step10_paid_llm_evaluation.py` | paid-LLM evaluation |
-
-Stages 7--10 consume archived score workbooks and can be run independently.
-They validate pair identifiers, labels, text alignment, numeric score ranges,
-and expected row counts before calculating results.
-
-Run the complete sequence from this directory:
-
-```bash
-python run_all_experiments.py
-```
-
-## Fixed settings
-
-- Traditional metrics: TF-IDF cosine, Jaccard, LCS, SequenceMatcher,
-  edit-distance similarity, and word overlap.
-- Full preprocessing: NFC normalization, lowercasing, digit normalization,
-  punctuation removal, lexical mapping at confidence 0.85 or higher, stopword
-  removal, and conservative stemming.
-- BanglaBERT checkpoints: `csebuetnlp/banglabert` and
-  `sagorsarker/bangla-bert-base`.
-- Encoder pooling: attention-masked mean pooling followed by L2 normalization.
-- Fixed threshold: 0.50.
-- Threshold grid: 0.10 through 0.90 in increments of 0.05.
-- Threshold tie-break: F1, accuracy, recall, then precision.
-- Random seed: 42.
-- Archived LLM scores are never imputed, clipped, renamed, or overwritten.
-
-## Validation
-
-`verify_dataset_consistency.py`, `verify_paid_llm_evaluation.py`, and
-`verify_report_paid_llm_values.py` provide independent consistency checks.
-The `validation/` outputs record row order, labels, source links, text
-preservation, hashes, and agreement between consolidated and source results.
+Running a numbered script directly writes into its parent project directory. Run it only in the staged output tree if existing results must be preserved. The root entry point creates that tree and refuses to reuse an existing output directory.

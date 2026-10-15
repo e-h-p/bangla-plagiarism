@@ -1,0 +1,7 @@
+﻿Profile,Setting,ReportLabel,Metric,Threshold,Accuracy,Precision,Recall,Specificity,FPR,BalancedAccuracy,F1,TP,FP,TN,FN
+stopword_removal,Stopword removal,Stopwords,Cosine,0.5,0.779,0.926606,0.606,0.952,0.048,0.779,0.732769,303,24,476,197
+stopword_removal,Stopword removal,Stopwords,Jaccard,0.5,0.751,0.928328,0.544,0.958,0.042,0.751,0.686003,272,21,479,228
+stopword_removal,Stopword removal,Stopwords,LCS,0.5,0.896,0.853571,0.956,0.836,0.164,0.896,0.901887,478,82,418,22
+stopword_removal,Stopword removal,Stopwords,Sequence,0.5,0.722,0.933594,0.478,0.966,0.034,0.722,0.632275,239,17,483,261
+stopword_removal,Stopword removal,Stopwords,EditDist,0.5,0.808,0.845291,0.754,0.862,0.138,0.808,0.79704,377,69,431,123
+stopword_removal,Stopword removal,Stopwords,WordOverlap,0.5,0.828,0.864444,0.778,0.878,0.122,0.828,0.818947,389,61,439,111

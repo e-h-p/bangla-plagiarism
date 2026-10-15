@@ -1,0 +1,2 @@
+﻿Metric,Threshold,Accuracy,Precision,Recall,Specificity,FPR,BalancedAccuracy,F1,TP,FP,TN,FN
+Aya_Expanse_8B_Score,0.85,0.878,0.804839,0.998,0.758,0.242,0.878,0.891071,499,121,379,1
